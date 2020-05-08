@@ -11,13 +11,15 @@
    <title>Blog | YDD</title>
   <!-- Bootstrap CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="vendor/fontawesome/css/all.min.css">
 
   <!-- Custom styles -->
   <link href="css/style.css" rel="stylesheet">
-
+  <link href="images/ydd_logo.png" rel="icon" type="images/png">
 </head>
 
 <body>
+
 
   <!-- Navigation -->
      <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light fixed-top">
@@ -26,14 +28,14 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
-        <ul class="navbar-nav ml-auto">
+       <ul class="navbar-nav ml-auto">
            <li class="nav-item">
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link" href="index.html"><i class="fas fa-home">Home</i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
+            <a class="nav-link" href="about.html">About</a>
           </li>
-          <li class="nav-item dropdown">
+        <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               Other Pages
             </a>
@@ -43,12 +45,8 @@
               <a class="dropdown-item" href="soulfoods.html">Soul food</a>
               <a class="dropdown-item" href="testimonies.html">Testimonies</a>
               <a class="dropdown-item" href="reports.html">Youth Reports</a>
-              <a class="dropdown-item" href="faq.html">FAQ</a>
+              <a class="dropdown-item" href="gallery.html">Gallery</a>
             </div>
-          </li>
-         
-          <li class="nav-item">
-            <a class="nav-link" href="services.html">Meetings</a>
           </li>
          
           <li class="nav-item dropdown">
@@ -60,6 +58,10 @@
               <a class="dropdown-item" href="blog-post.html">Blog Post</a>
             </div>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+         
         </ul>
       </div>
   </nav>
@@ -226,13 +228,18 @@
  <footer class="padding-top-120">
       <div class="footer-end-line"></div>
       <br>
-     <p class="m-0 text-center text-white">Copyright &copy; <a href="https://afmwecaydd.com/"><span class="span text-violat ">Youth Development Directorate</span></a> 2020</p>
+     <p class="m-0 text-center text-black">Copyright &copy; <a href="https://afmwecaydd.com/"><span class="span text-violat ">Youth Development Directorate </span></a><script> document.write(new Date().getFullYear());</script></p>
     </footer>
 
   
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+    <script>
+      $(window).scroll(function(){
+      $('nav').toggleClass('scrolled', $(this).scrollTop() > 180);});
+      
+    </script>
 </body>
 
 </html>
